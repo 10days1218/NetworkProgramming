@@ -24,7 +24,7 @@ int main(int argc, char **argv)
     server_sockfd = socket(AF_INET, SOCK_STREAM, 0);
     serveraddr.sin_family = AF_INET;
     serveraddr.sin_addr.s_addr = inet_addr("218.234.19.87");
-    serveraddr.sin_port = htons(atoi(argv[1]));
+    serveraddr.sin_port = htons(atoi(argv[1])); //실행시 port 번호 입력
 
     client_len = sizeof(serveraddr);
 
